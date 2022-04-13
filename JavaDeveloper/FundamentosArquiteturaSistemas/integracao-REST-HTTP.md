@@ -1,0 +1,13 @@
+13/04/2022
+
+---
+### Código de estado
+
+ - 1xx Informativo =  recebeu mas nao sabe se vai conseguir processar ou nao. Esta em processsamento.
+ - 2xx Sucesso
+ - 3xx Redirecionamento = avisa alterações na URI
+ - 4xx Erro do CLiente
+ - 5xx Erro do Servidor
+
+---
+P
