@@ -48,10 +48,31 @@ x = y
 Condição ? valor1 : valor 2
 
 ### Lógicos
-- AND &&
-- OR ||
+- AND `&&`
+- OR `||`
 
 ### Não Lógico
 - !true
 - !false
 - !! = comparação booleana
+
+### Unários
+
+`delete` something;
+`typeof` something;
+
+## Binário
+
+`in` 
+something `in` somethingItems
+
+```JavaScript
+var arvores = new Array["pau-brasil", "loureiro", "cedro", "carvalho", "sicômoro"];
+0 in arvores;           //retorna true
+3 in arvores;           //retorna true
+6 in arvores;           //retorna false
+"cedro" in arvores;     //retorna false (voce deve ESPECIFICAR o número de índice !)
+"length" in arvores;    // retorna true (length é uma propriedade do Array)
+
+```
+`instanceof`
