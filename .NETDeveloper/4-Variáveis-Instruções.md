@@ -52,3 +52,16 @@ Ações de um programa são expressas usando isntruções
   - throw
   - try...catch...finally
   - using
+
+---
+19/04/2022
+
+# Array
+
+Estrutura de dados que contém um número X de elementos, todos do mesmo tipo, que são acessados através de índeces computados
+São tipos de referência e a declaração de uma variável array simplesmente reserva espaço para uma referência de uma instancia de array
+O tamanho do array é fixo durante todo o tempo de vida da instância
+
+## Unidimensionais
+
+## Bidimensionais (matrizes)

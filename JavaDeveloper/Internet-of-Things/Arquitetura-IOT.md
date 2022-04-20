@@ -61,3 +61,35 @@ Responde <=
 
 *Maior escalabilidade
 *Modelo Assíncrono
+
+---
+
+19/04/2022
+
+Publish
+Subscribe
+ 
+ ## QOS 
+
+ Nível de qualidade de serviço
+
+- 0 (Publish)
+  - Nivel mínimo de menor esforço computacinal
+  - Sem garantia de entrega
+  - Mensagem não é retransmitida
+- 1 (Publish/Puback)
+  - Garante que a mensagem foi entregue no mínimo uma vez ao recebedor
+  - Mensagme pode ser retransmitida se não houver confirmação de entrega
+- 2 (Publish/Pubrec/Pubrel/Pubcomp)
+  - Garante que a mensagem foi entregue, no mínimo uma vez ao recebedor
+  - Mensagem pode ser retransmitida se não houver confirmação de entrega
+
+## Cloud
+
+- Grande e cada vez maior o número de devices conectados
+- TeraBytes ou PentaBytess de informações
+- Potencial de escala global
+
+<b> Data store = Armazena os dados provenientes dos devices(sensores)
+Cache = apresenta em tempo real as chamadas no Broker (in Memory)
+</b>
