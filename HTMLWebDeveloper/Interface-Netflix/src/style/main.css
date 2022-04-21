@@ -16,7 +16,7 @@
 
 body {
     background-color: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -40,14 +40,19 @@ header nav a {
     margin-right: 10px;
 }
 
+.aba {
+    color: #ffffff;
+    font-size: 20px;
+}
+
 header nav a:hover {
     color: #ffffff;
 }
 
 .filme-principal {
-    font: size 16px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/ese.jpg');
-    height: 500px;
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('../img/ese.jpg');
+    height: 400px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -58,6 +63,7 @@ header nav a:hover {
 .filme-principal .descricao {
     margin-bottom: 30px;
     margin-top: 10px;
+    text-align: justify;
 }
 
 .titulo {
@@ -95,7 +101,11 @@ header nav a:hover {
 }
 
 .box-filme {
-    height: 100%;
+    height: 250px;
     width: 100%;
-    display: block;
+    display: flex;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
 }

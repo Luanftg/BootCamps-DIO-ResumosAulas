@@ -93,3 +93,41 @@ Subscribe
 <b> Data store = Armazena os dados provenientes dos devices(sensores)
 Cache = apresenta em tempo real as chamadas no Broker (in Memory)
 </b>
+
+---
+
+20/04/2022
+
+# Arquitetura é escolha!
+
+## Prova de conceito
+
+- App Android - GPS
+- Eclipse Mosquito - BROKER
+- Node.js
+- Banco de dados MySQL
+
+## Mínimo Produto Viável (MVP)
+
+- Gps Embarcado
+- Hive MQ
+- Akka Scala JVM
+- Banco de Dados noSQL -Mongodb
+
+## Solução
+
+- GPs Embarcado
+- AWS IOT Core
+- AWS Kinesis Firehose (DATA STREAM)
+- AWS S3 (Armazenamento em núvem)
+
+# IOT na prática
+
+- GPS      ====>  GPS EMBARCADO
+- Broker   ====>  AWS IOT CORE
+- Worker   ====>  AWS DATA STREAM
+- Cache    ====>  AWS LAMBDA (Função que pode reduzir os dados à informação que o usuário quer)
+- Entrega  ====>  AWS ELASTIC CACHE REDIS (dado mais atual da posição do client)
+- AWS EC2 -  se inscreve e "escuta" o redis
+- Feathers JS Backend (atualiza o dashboard)
+- Dashboard
