@@ -28,4 +28,3 @@ Em seguida, o CLR executará a compilação just in time (JIT) para converter o 
   - Resources Manager
 
 ---
-## Estrutura  básica de Programa
