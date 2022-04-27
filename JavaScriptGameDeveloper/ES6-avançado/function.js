@@ -56,11 +56,78 @@ var obj = {
     }
 };
 console.log(obj.sum(1, 5));*/
-
+/*
 var propName = 'teste';
 
 var obj = {
     [propName + 'concat']: 'prop value'
 };
 
+console.log(obj);*/
+
+//rest operator ...
+/*
+function sum(a, b) {
+    var value = 0;
+
+    for (var i = 0; i < arguments.length; i++) {
+        value += arguments[i];
+
+    }
+    return value;
+}
+console.log(sum(5, 5, 5, 2, 3));*/
+/*
+function sum(...args) {
+    return args.reduce((acc,value)=>acc+value,0);
+}
+console.log(sum(5, 5, 5, 2, 3));*/
+
+//rest operator...
+/*
+const multiply = (...args) => args.reduce((acc, value) => acc * value, 1);
+
+const sum = (...rest) => {
+    return multiply.apply(undefined, rest);
+};
+
+console.log(sum(5, 5, 5, 2, 3));
+*/
+
+// spread operator...
+/*
+const multiply = (...args) => args.reduce((acc, value) => acc * value, 1);
+
+const sum = (...rest) => {
+    return multiply(...rest);
+};
+
+console.log(sum(5, 5, 5, 2, 3));
+*/
+/*
+const str = 'Digital Innovation One';
+const arr = [1, 2, 3, 4];
+
+function logArgs(a, b, c) {
+    console.log(a, b, c);
+}
+
+const arr2 = [...arr, 5, 6, 7];
+
+const arr3 = [...arr2, ...arr, 0, 0, 0];
+
+console.log(arr3);
+//logArgs(...arr);
+*/
+
+const obj = {
+    test: 123
+};
+
+const obj2 = {
+    ...obj
+};
+
+
+obj2.test = 456;
 console.log(obj);
