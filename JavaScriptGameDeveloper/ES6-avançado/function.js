@@ -119,7 +119,7 @@ const arr3 = [...arr2, ...arr, 0, 0, 0];
 console.log(arr3);
 //logArgs(...arr);
 */
-
+/*
 const obj = {
     test: 123
 };
@@ -131,3 +131,22 @@ const obj2 = {
 
 obj2.test = 456;
 console.log(obj);
+*/
+
+//Symbols
+/*
+const uniqueId = Symbol('Hello');
+const uniqueId2 = Symbol('Hello');
+
+console.log(uniqueId === uniqueId2);
+*/
+/*
+const arr = [1, 2, 3, 4];
+const str = 'Digital Innovation One';
+
+for (let i of str) {
+    console.log(i);
+}
+*/
+
+//Symbol.iterator
